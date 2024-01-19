@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import Quill from 'quill';
 
 
+
 interface TextEditorProps {
   w: string;
   h: string;
@@ -22,7 +23,7 @@ const TextEditor :  React.FC<TextEditorProps> = ({ w, h }) => {
         quillScript.onload = () => {
           const quill = new Quill('#editor', {
             theme: 'snow',
-          });
+        });
         };
     
         return () => {
